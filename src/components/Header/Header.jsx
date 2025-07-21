@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <div className="text-sm font-medium">
             {/* Top Bar */}
-            <div className="bg-[#030637] text-white flex justify-between px-4 md:px-16 py-2 text-xs">
+            <div className="bg-[#275588] text-white flex justify-between px-4 md:px-16 py-2 text-xs">
                 <div className="flex gap-4 items-center">
                     <span className="flex items-center gap-1">
                         <FaPhoneAlt /> +91 777 888 0306
@@ -58,7 +58,7 @@ const Header = () => {
 
                 {/* Hamburger Icon */}
                 <div className="md:hidden">
-                    <button onClick={() => setMenuOpen(!menuOpen)} >
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="transition-all duration-500">
                         {menuOpen ? (
                             <FaTimes size={24} className="text-[#030637]" />
                         ) : (
@@ -110,7 +110,7 @@ const Header = () => {
 
                 {/* Mobile Dropdown Menu */}
                 {menuOpen && (
-                    <div className="absolute top-full left-0 w-full bg-gray-50 py-4 px-6 md:hidden z-10 shadow">
+                    <div className="absolute top-full left-0 w-full bg-gray-50 py-4 px-6 md:hidden z-10 shadow transition-all duration-500">
                         <ul className="flex flex-col gap-3">
                             <li>
                                 <a href="#" className="text-orange-500">
