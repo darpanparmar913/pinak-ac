@@ -1,5 +1,5 @@
 import './App.css'
-import ClientNumber from './components/clientNumber/clientNumber'
+import ClientNumber from './components/ClientSection/ClientSection'
 import FooterSection from './components/FooterSection/FooterSection'
 import Header from './components/Header/Header'
 import HeroSlider from './components/HeroSlider/HeroSlider'
@@ -18,7 +18,7 @@ function App() {
       <WhyChooseUs />
       <ServicesSection />
       <TeamSlider />
-      <FooterSection />
+      <FooterSection /> 
     </>
   )
 }
