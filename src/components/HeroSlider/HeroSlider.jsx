@@ -13,16 +13,22 @@ const slides = [
     image: "/images/slider-img-1.jpg", // Replace with your image URL
   },
   {
+    id: 1,
+    title: "Commercial AC Solutions",
+    desc: "We offer large-scale AC installation, maintenance, and servicing for commercial properties. Create a comfortable workspace with our tailored cooling systems.",
+    image: "/images/slider-img-2.jpg", // Replace with your image URL
+  },
+  {
     id: 2,
     title: "Reliable AC Repair & Maintenance",
     desc: "Stay cool year-round with our fast and affordable repair services. From minor fixes to major repairs, we keep your AC running like new.",
-    image: "/images/slider-img-2.jpg", // Replace with your image URL
+    image: "/images/slider-img-3.jpg", // Replace with your image URL
   },
   {
     id: 3,
     title: "24/7 Emergency AC Service",
     desc: "Facing an AC breakdown? Our emergency response team is just a call away—any time, any day.",
-    image: "/images/slider-img-3.jpg", // Replace with your image URL
+    image: "/images/slider-img-4.jpg", // Replace with your image URL
   },
 ];
 

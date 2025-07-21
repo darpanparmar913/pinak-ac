@@ -88,11 +88,6 @@ const Header = () => {
                             </li>
                             <li>
                                 <a href="#" className="text-gray-600 hover:text-orange-500">
-                                    Pages <span className="text-xs">▼</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="text-gray-600 hover:text-orange-500">
                                     Contact Us
                                 </a>
                             </li>
