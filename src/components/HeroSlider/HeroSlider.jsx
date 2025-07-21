@@ -4,6 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
@@ -32,7 +33,15 @@ const slides = [
   },
 ];
 
+
 const HeroSlider = () => {
+
+  const naviagte = useNavigate();
+
+  const handleClick = () => {
+    naviagte('/services');
+  }
+
   return (
     <div className="relative w-full">
       <Swiper
@@ -42,8 +51,8 @@ const HeroSlider = () => {
         autoplay={{ delay: 4000 }}
         className="w-full h-[80vh] md:h-[90vh]"
       >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
             <div
               className="w-full h-full bg-cover bg-center flex items-center justify-center"
               style={{
@@ -57,7 +66,7 @@ const HeroSlider = () => {
                 <p className="mb-6 text-base md:text-lg text-gray-300">
                   {slide.desc}
                 </p>
-                <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded shadow transition">
+                <button onClick={handleClick} className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded shadow transition cursor-pointer">
                   Book Now
                 </button>
               </div>
