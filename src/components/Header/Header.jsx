@@ -8,10 +8,18 @@ import {
     FaInstagram,
     FaBars,
     FaTimes,
+    FaWhatsapp,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const naviagte = useNavigate();
+
+    const handleClick = () => {
+        naviagte('/services');
+    }
 
     return (
         <div className="text-sm font-medium">
@@ -96,10 +104,32 @@ const Header = () => {
 
                     {/* Social Icons */}
                     <div className="flex gap-3">
-                        <IconButton icon={<FaFacebookF />} />
-                        <IconButton icon={<FaTwitter />} />
-                        <IconButton icon={<FaLinkedinIn />} />
-                        <IconButton icon={<FaInstagram />} />
+                        <a
+                            href={'https://www.instagram.com/pinak_air_conditioner_05?igsh=cm5oaTZtZmZxbnN5'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 bg-gray-100 flex items-center justify-center rounded-full hover:bg-orange-100 cursor-pointer">
+                            <FaInstagram className="text-[#e93c7d]" size={16} />
+                        </a>
+                        <a
+                            href={'https://www.facebook.com/share/1KmMGiERdY'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 bg-gray-100 flex items-center justify-center rounded-full hover:bg-orange-100 cursor-pointer">
+                            <FaFacebookF className="text-[#2c64f6]" size={16} />
+                        </a>
+                        <a
+                            href={'https://web.whatsapp.com/send?phone=917778880306&text=Hello Sir, Available.'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 bg-gray-100 flex items-center justify-center rounded-full hover:bg-orange-100 cursor-pointer">
+                            <FaWhatsapp className="text-[#61d467]" size={16} />
+                        </a>
+                    </div>
+                    <div>
+                        <button onClick={handleClick} className="px-6 py-3 bg-orange-500 text-white text-sm md:text-base font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                            Book Service Now
+                        </button>
                     </div>
                 </div>
 
@@ -129,10 +159,32 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className="flex gap-3 mt-3">
-                            <IconButton icon={<FaFacebookF />} />
-                            <IconButton icon={<FaTwitter />} />
-                            <IconButton icon={<FaLinkedinIn />} />
-                            <IconButton icon={<FaInstagram />} />
+                            <a
+                                href={'https://www.instagram.com/pinak_air_conditioner_05?igsh=cm5oaTZtZmZxbnN5'}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-8 h-8 bg-gray-100 flex items-center justify-center rounded-full hover:bg-orange-100 cursor-pointer">
+                                <FaInstagram className="text-[#e93c7d]" size={16} />
+                            </a>
+                            <a
+                                href={'https://www.facebook.com/share/1KmMGiERdY'}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-8 h-8 bg-gray-100 flex items-center justify-center rounded-full hover:bg-orange-100 cursor-pointer">
+                                <FaFacebookF className="text-[#2c64f6]" size={16} />
+                            </a>
+                            <a
+                                href={'https://web.whatsapp.com/send?phone=917778880306&text=Hello Sir, Available.'}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-8 h-8 bg-gray-100 flex items-center justify-center rounded-full hover:bg-orange-100 cursor-pointer">
+                                <FaWhatsapp className="text-[#61d467]" size={16} />
+                            </a>
+                        </div>
+                        <div>
+                            <button className="px-6 py-3 mt-3 bg-orange-500 text-white text-sm md:text-base font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                                Book Service Now
+                            </button>
                         </div>
                     </div>
                 )}

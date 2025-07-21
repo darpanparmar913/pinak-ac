@@ -7,6 +7,8 @@ import {
     FaTwitter,
     FaYoutube,
     FaLinkedinIn,
+    FaInstagram,
+    FaWhatsapp,
 } from "react-icons/fa";
 
 const FooterSection = () => {
@@ -24,10 +26,7 @@ const FooterSection = () => {
                         <span className="text-[#ffffff]">Pinak Air Conditioner</span>
                     </div>
                     <p className="text-sm text-gray-400 mt-4">
-                        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-                        ipsum et lorem et sit, sed stet lorem sit clita. Diam dolor diam
-                        ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit.
+                        We provide expert air conditioner repair, installation, and maintenance services with a commitment to quality, reliability, and customer satisfaction. Stay cool and comfortable year-round with our trusted HVAC solutions.
                     </p>
                 </div>
 
@@ -37,7 +36,7 @@ const FooterSection = () => {
                     <ul className="text-sm text-gray-300 space-y-3">
                         <li className="flex items-start gap-2">
                             <FaMapMarkerAlt className="mt-1 w-10" />
-                            <span>Shop No: 5, Rameshwar A+Shopping Center, Nr, D-mart Mall, Vanmali Junction, Yogichowk, Surat - 395010.</span>
+                            <span>Shop No: 5, Rameshwar Shopping Center, Nr. D-mart Mall, Vanmali Junction, Yogichowk, Surat - 395010.</span>
                         </li>
                         <li className="flex items-center gap-2">
                             <FaPhoneAlt /> <span>+91 777 888 0306</span>
@@ -75,14 +74,27 @@ const FooterSection = () => {
 
             {/* Social Icons */}
             <div className="flex justify-center mt-10 gap-4">
-                {[FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn].map((Icon, index) => (
-                    <div
-                        key={index}
-                        className="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors cursor-pointer"
-                    >
-                        <Icon className="text-white" size={16} />
-                    </div>
-                ))}
+                <a
+                    href={'https://www.instagram.com/pinak_air_conditioner_05?igsh=cm5oaTZtZmZxbnN5'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors cursor-pointer">
+                    <FaInstagram className="text-white" size={16} />
+                </a>
+                <a
+                    href={'https://www.facebook.com/share/1KmMGiERdY'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors cursor-pointer">
+                    <FaFacebookF className="text-white" size={16} />
+                </a>
+                <a
+                    href={'https://web.whatsapp.com/send?phone=917778880306&text=Hello Sir, Available.'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-full border border-gray-400 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition-colors cursor-pointer">
+                    <FaWhatsapp className="text-white" size={16} />
+                </a>
             </div>
         </footer>
     );

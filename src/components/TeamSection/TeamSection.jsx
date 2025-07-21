@@ -7,43 +7,35 @@ import "swiper/css/pagination";
 
 const teamMembers = [
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Ravibhai Visavadiya",
     image: "/images/team-1.jpg",
   },
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Manishbhai Bariya",
     image: "/images/team-1.jpg",
   },
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Yagnikbhai Vyas",
     image: "/images/team-1.jpg",
   },
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Chiragbhai Ansari",
     image: "/images/team-1.jpg",
   },
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Bitubhai Singh",
     image: "/images/team-1.jpg",
   },
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Ranjeetbhai Chorasiya",
     image: "/images/team-1.jpg",
   },
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Sivambhai Goswami",
     image: "/images/team-1.jpg",
   },
   {
-    name: "Full Name",
-    designation: "Designation",
+    name: "Susilbhai Kumar",
     image: "/images/team-1.jpg",
   },
 ];
@@ -85,9 +77,6 @@ const TeamSlider = () => {
                 <h3 className="text-lg font-bold text-[#030637]">
                   {member.name}
                 </h3>
-                <p className="text-orange-500 text-sm mt-1">
-                  {member.designation}
-                </p>
               </div>
             </div>
           </SwiperSlide>

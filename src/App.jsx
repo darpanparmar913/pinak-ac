@@ -1,24 +1,17 @@
+import { Route, Router, Routes } from 'react-router-dom'
 import './App.css'
-import ClientNumber from './components/ClientSection/ClientSection'
-import FooterSection from './components/FooterSection/FooterSection'
 import Header from './components/Header/Header'
-import HeroSlider from './components/HeroSlider/HeroSlider'
-import ServiceCenter from './components/ServiceCenter/ServiceCenter'
-import ServicesSection from './components/ServicesSection/ServicesSection'
-import TeamSlider from './components/TeamSection/TeamSection'
-import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs'
+import HomePage from './components/HomePage'
+import Services from './components/ServicesPage/Services/Services'
 
 function App() {
   return (
     <>
-      <Header />
-      <HeroSlider />
-      <ServiceCenter />
-      <ClientNumber />
-      <WhyChooseUs />
-      <ServicesSection />
-      <TeamSlider />
-      <FooterSection /> 
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
     </>
   )
 }
