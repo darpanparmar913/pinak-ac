@@ -21,7 +21,7 @@ const Services = () => {
     setIsloading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/service/book", {
+      const res = await fetch("https://pinak-ac-backend-1.onrender.com/api/service/book", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
