@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import HomePage from './components/HomePage'
 import Services from './components/ServicesPage/Services/Services'
+import FooterSection from './components/FooterSection/FooterSection'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<Services />} />
         </Routes>
+        <FooterSection />
     </>
   )
 }

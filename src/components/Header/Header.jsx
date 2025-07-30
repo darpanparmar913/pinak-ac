@@ -182,7 +182,7 @@ const Header = () => {
                             </a>
                         </div>
                         <div>
-                            <button className="px-6 py-3 mt-3 bg-orange-500 text-white text-sm md:text-base font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                            <button onClick={handleClick} className="px-6 py-3 mt-3 bg-orange-500 text-white text-sm md:text-base font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
                                 Book Service Now
                             </button>
                         </div>
