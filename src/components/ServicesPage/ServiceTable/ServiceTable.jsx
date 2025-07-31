@@ -167,11 +167,11 @@ const ServiceTable = () => {
                                     <td className="px-4 py-2 border">{item.mobileNumber}</td>
                                     <td className="px-4 py-2 border">{item.acType}</td>
                                     <td className="px-4 py-2 border">{new Date(item.createdAt).toLocaleDateString()}</td>
-                                    <td className="px-4 py-2 border">{"₹" + item.profit}</td>
+                                    <td className="px-4 py-2 border">{item.profit ? "₹" + item.profit : 0}</td>
                                     <td className="px-4 py-2 border">{item.paymentMethod}</td>
                                     <td className="px-4 py-2 border space-x-2">
-                                        <button onClick={() => handleEdit(item)} className="text-blue-600 hover:underline">Edit</button>
-                                        <button onClick={() => handleDelete(item._id)} className="text-red-600 hover:underline">Delete</button>
+                                        <button onClick={() => handleEdit(item)} className="bg-blue-600 text-[#ffffff] px-4 py-1 rounded-[5px] hover:underline">Edit</button>
+                                        <button onClick={() => handleDelete(item._id)} className="bg-red-600 text-[#ffffff] px-4 py-1 rounded-[5px] hover:underline">Delete</button>
                                     </td>
                                 </tr>
                             ))}

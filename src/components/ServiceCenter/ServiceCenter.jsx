@@ -43,7 +43,7 @@ const ServiceCenter = () => {
                             <div className="bg-orange-500 text-white rounded-full p-4">
                                 <FaEnvelope />
                             </div>
-                            <span className="text-[#030637] font-semibold text-[16px] sm:text-[18px]">info@example.com</span>
+                            <span className="text-[#030637] font-semibold text-[16px] sm:text-[18px]">pinakrefrigeration@gmail.com</span>
                         </div>
                     </div>
                 </div>

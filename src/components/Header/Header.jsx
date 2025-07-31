@@ -30,7 +30,7 @@ const Header = () => {
                         <FaPhoneAlt /> +91 777 888 0306
                     </span>
                     <span className="flex items-center gap-1">
-                        <FaEnvelope /> info@example.com
+                        <FaEnvelope /> pinakrefrigeration@gmail.com
                     </span>
                 </div>
                 <div className="hidden sm:flex gap-3">
@@ -80,7 +80,7 @@ const Header = () => {
                     <nav className="bg-gray-100 px-4 py-2 rounded-full text-sm">
                         <ul className="flex gap-4">
                             <li>
-                                <a href="#" className="text-orange-500">
+                                <a href="/" className="text-orange-500">
                                     Home
                                 </a>
                             </li>
@@ -138,7 +138,7 @@ const Header = () => {
                     <div className="absolute top-full left-0 w-full bg-gray-50 py-4 px-6 md:hidden z-10 shadow transition-all duration-500">
                         <ul className="flex flex-col gap-3">
                             <li>
-                                <a href="#" className="text-orange-500">
+                                <a href="/" className="text-orange-500">
                                     Home
                                 </a>
                             </li>
@@ -192,11 +192,5 @@ const Header = () => {
         </div>
     );
 };
-
-const IconButton = ({ icon }) => (
-    <div className="w-8 h-8 bg-gray-100 text-orange-500 flex items-center justify-center rounded-full hover:bg-orange-100">
-        {icon}
-    </div>
-);
 
 export default Header;

@@ -42,7 +42,7 @@ const FooterSection = () => {
                             <FaPhoneAlt /> <span>+91 777 888 0306</span>
                         </li>
                         <li className="flex items-center gap-2">
-                            <FaEnvelope /> <span>info@example.com</span>
+                            <FaEnvelope /> <span>pinakrefrigeration@gmail.com</span>
                         </li>
                     </ul>
                 </div>
