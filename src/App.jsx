@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/service-list-table" element={<ServiceTable />} />
+          <Route path="/service-list-pinak-8312" element={<ServiceTable />} />
         </Routes>
         <FooterSection />
     </>
