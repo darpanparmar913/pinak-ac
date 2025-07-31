@@ -31,7 +31,7 @@ const ServiceTable = () => {
 
     const handleUpdate = async () => {
         try {
-            const res = await fetch(`http://localhost:5000/api/service/update/${editItem._id}`, {
+            const res = await fetch(`https://pinak-ac-backend-1.onrender.com/api/service/update/${editItem._id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(editForm),
@@ -51,7 +51,7 @@ const ServiceTable = () => {
     useEffect(() => {
         const fetchServices = async () => {
             try {
-                const res = await fetch("http://localhost:5000/api/service/service-list");
+                const res = await fetch("https://pinak-ac-backend-1.onrender.com/api/service/service-list");
                 const data = await res.json();
                 setServices(data);
                 setFiltered(data);
@@ -96,7 +96,7 @@ const ServiceTable = () => {
     const handleDelete = async (id) => {
         if (!window.confirm("Are you sure you want to delete this service?")) return;
         try {
-            await fetch(`http://localhost:5000/api/service/delete/${id}`, {
+            await fetch(`https://pinak-ac-backend-1.onrender.com/api/service/delete/${id}`, {
                 method: "DELETE",
             });
             setServices(services.filter((item) => item._id !== id));

@@ -5,7 +5,7 @@ const Services = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/service/service-list");
+        const res = await fetch("https://pinak-ac-backend-1.onrender.com/api/service/service-list");
         const data = await res.json();
         console.log("Service list:", data);
       } catch (error) {
@@ -58,7 +58,7 @@ const Services = () => {
 
     try {
       // const res = await fetch("https://pinak-ac-backend-1.onrender.com/api/service/book", {
-      const res = await fetch("http://localhost:5000/api/service/book", {
+      const res = await fetch("https://pinak-ac-backend-1.onrender.com/api/service/book", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
