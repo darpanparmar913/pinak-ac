@@ -4,7 +4,6 @@ import ServiceCenter from './ServiceCenter/ServiceCenter'
 import ClientNumber from './ClientSection/ClientSection'
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs'
 import ServicesSection from './ServicesSection/ServicesSection'
-import TeamSlider from './TeamSection/TeamSection'
 
 const HomePage = () => {
     return (
@@ -14,7 +13,6 @@ const HomePage = () => {
             <ClientNumber />
             <WhyChooseUs />
             <ServicesSection />
-            <TeamSlider />
         </>
     )
 }
