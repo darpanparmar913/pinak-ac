@@ -25,8 +25,8 @@ const ServiceCenter = () => {
 
                     {/* Description */}
                     <p className="text-[#7F8499] text-[16px] sm:text-[18px] mb-6">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        At Best Cooling & Heating Service Center, we are committed to keeping your home comfortable all year round. 
+                        Our expert team provides fast, reliable, and affordable solutions for all your air conditioning and heating needs.
                     </p>
 
                     <hr className="border-gray-200 mb-6" />

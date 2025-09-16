@@ -90,12 +90,12 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600 hover:text-orange-500">
+                                <a href="/our-service" className="text-gray-600 hover:text-orange-500">
                                     Our Services
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600 hover:text-orange-500">
+                                <a href="/contact-us" className="text-gray-600 hover:text-orange-500">
                                     Contact Us
                                 </a>
                             </li>
@@ -134,8 +134,9 @@ const Header = () => {
                 </div>
 
                 {/* Mobile Dropdown Menu */}
-                {menuOpen && (
-                    <div className="absolute top-full left-0 w-full bg-gray-50 py-4 px-6 md:hidden z-10 shadow transition-all duration-500">
+                {/* {menuOpen && ( */}
+                    <div className={`absolute top-full left-0 w-full bg-gray-50 py-4 px-6 md:hidden z-10 shadow transform transition-all duration-300 ease-in-out ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"
+                        }`}>
                         <ul className="flex flex-col gap-3">
                             <li>
                                 <a href="/" className="text-orange-500">
@@ -148,12 +149,12 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600 hover:text-orange-500">
+                                <a href="/our-service" className="text-gray-600 hover:text-orange-500">
                                     Our Services
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-600 hover:text-orange-500">
+                                <a href="/contact-us" className="text-gray-600 hover:text-orange-500">
                                     Contact Us
                                 </a>
                             </li>
@@ -187,7 +188,7 @@ const Header = () => {
                             </button>
                         </div>
                     </div>
-                )}
+                {/* )} */}
             </div>
         </div>
     );

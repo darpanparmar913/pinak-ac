@@ -4,17 +4,17 @@ const reasons = [
   {
     icon: "/images/why-choose-icon-1.png", // Use your local icon or external URL
     title: "Trusted Service Center",
-    desc: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.",
+    desc: "We take pride in offering reliable and professional services that customers can count on. Our team is trained to handle every job with care, ensuring your cooling and heating systems are always in top condition.",
   },
   {
     icon: "/images/why-choose-icon-2.png",
     title: "Reasonable Price",
-    desc: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.",
+    desc: "We believe in providing top-quality service without breaking the bank. Our affordable pricing ensures you get the best solutions for your home’s comfort while staying within your budget.",
   },
   {
     icon: "/images/why-choose-icon-3.png",
     title: "24/7 Supports",
-    desc: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.",
+    desc: "Your comfort is our priority, which is why we’re available around the clock. Whether it’s an emergency or a quick service request, our team is always ready to assist you whenever you need us.",
   },
 ];
 
@@ -28,9 +28,9 @@ const WhyChooseUs = () => {
             Few Reasons Why People <br /> Choosing Us!
           </h2>
           <p className="text-[#7F8499] text-[16px] md:text-[18px] mb-8">
-            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-            lorem sit clita duo justo magna dolore erat amet
+            Customers choose us because we deliver trusted, high-quality service every time. 
+            With years of experience, skilled technicians, and a focus on customer satisfaction, 
+            we ensure your cooling and heating systems work efficiently and reliably.
           </p>
 
           {/* Reason Cards */}
