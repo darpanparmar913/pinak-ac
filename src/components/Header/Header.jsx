@@ -57,9 +57,9 @@ const Header = () => {
                 {/* Logo */}
                 <div className="flex items-center gap-2 text-[20px] sm:text-[24px] font-bold text-[#030637]">
                     <img
-                        src="/images/service-logo.png"
+                        src="/piank-logo.png"
                         alt="logo"
-                        className="w-8 h-8"
+                        className="w-10 h-10"
                     />
                     <span className="text-[#030637]">Pinak Air Conditioner</span>
                 </div>

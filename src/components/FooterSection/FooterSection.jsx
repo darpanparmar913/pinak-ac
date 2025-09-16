@@ -14,12 +14,12 @@ import {
 const FooterSection = () => {
     return (
         <footer className="bg-[#050c2a] text-white py-10 px-5 md:px-20">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                 {/* Company Info */}
                 <div>
                     <div className="flex items-center gap-3 text-2xl font-bold">
                         <img
-                            src="/images/service-logo.png"
+                            src="/piank-logo.png"
                             alt="logo"
                             className="w-8 h-8"
                         />
@@ -61,7 +61,7 @@ const FooterSection = () => {
                 </div>
 
                 {/* Quick Links & Newsletter */}
-                <div>
+                {/* <div>
                     <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul className="text-sm text-gray-300 space-y-3">
                         <li>About Us</li>
@@ -69,7 +69,7 @@ const FooterSection = () => {
                         <li>Our Services</li>
                         <li>Terms & Condition</li>
                     </ul>
-                </div>
+                </div> */}
             </div>
 
             {/* Social Icons */}
